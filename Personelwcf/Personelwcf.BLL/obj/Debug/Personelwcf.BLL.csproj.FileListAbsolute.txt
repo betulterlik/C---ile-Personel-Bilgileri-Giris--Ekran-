@@ -1,0 +1,13 @@
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\Personelwcf.BLL.dll.config
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\Personelwcf.BLL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\Personelwcf.BLL.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\obj\Debug\Personelwcf.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\obj\Debug\Personelwcf.BLL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\obj\Debug\Personelwcf.BLL.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\Personelwcf.DAL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\Personelwcf.DAL.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.BLL\bin\Debug\Personelwcf.DAL.dll.config

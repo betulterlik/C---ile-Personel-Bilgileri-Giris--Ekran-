@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonelDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Departman">
+    <Key>
+      <PropertyRef Name="DepartmanId" />
+    </Key>
+    <Property Name="DepartmanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmanAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblPersonel" Relationship="Self.FK_Personel_Departman" FromRole="Departman" ToRole="tblPersonel" />
+  </EntityType>
+  <EntityType Name="ilceler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ilce" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ilId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_ilceler_iller" FromRole="ilceler" ToRole="iller" />
+    <NavigationProperty Name="tblPersonel" Relationship="Self.FK_Personel_ilceler" FromRole="ilceler" ToRole="tblPersonel" />
+  </EntityType>
+  <EntityType Name="iller">
+    <Key>
+      <PropertyRef Name="ilId" />
+    </Key>
+    <Property Name="ilId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ilAdi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ilceler" Relationship="Self.FK_ilceler_iller" FromRole="iller" ToRole="ilceler" />
+    <NavigationProperty Name="tblPersonel" Relationship="Self.FK_Personel_iller" FromRole="iller" ToRole="tblPersonel" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblPersonel">
+    <Key>
+      <PropertyRef Name="PersonelId" />
+    </Key>
+    <Property Name="PersonelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DogumTarihi" Type="DateTime" Precision="0" />
+    <Property Name="DepartmanId" Type="Int32" />
+    <Property Name="Maas" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <Property Name="pResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ResimImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Departman" Relationship="Self.FK_Personel_Departman" FromRole="tblPersonel" ToRole="Departman" />
+    <NavigationProperty Name="ilceler" Relationship="Self.FK_Personel_ilceler" FromRole="tblPersonel" ToRole="ilceler" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_Personel_iller" FromRole="tblPersonel" ToRole="iller" />
+  </EntityType>
+  <Association Name="FK_Personel_Departman">
+    <End Role="Departman" Type="Self.Departman" Multiplicity="0..1" />
+    <End Role="tblPersonel" Type="Self.tblPersonel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departman">
+        <PropertyRef Name="DepartmanId" />
+      </Principal>
+      <Dependent Role="tblPersonel">
+        <PropertyRef Name="DepartmanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ilceler_iller">
+    <End Role="iller" Type="Self.iller" Multiplicity="1" />
+    <End Role="ilceler" Type="Self.ilceler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="ilId" />
+      </Principal>
+      <Dependent Role="ilceler">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personel_ilceler">
+    <End Role="ilceler" Type="Self.ilceler" Multiplicity="0..1" />
+    <End Role="tblPersonel" Type="Self.tblPersonel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilceler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tblPersonel">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personel_iller">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="tblPersonel" Type="Self.tblPersonel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="ilId" />
+      </Principal>
+      <Dependent Role="tblPersonel">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PersonelDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departman" EntityType="Self.Departman" />
+    <EntitySet Name="ilceler" EntityType="Self.ilceler" />
+    <EntitySet Name="iller" EntityType="Self.iller" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="tblPersonel" EntityType="Self.tblPersonel" />
+    <AssociationSet Name="FK_Personel_Departman" Association="Self.FK_Personel_Departman">
+      <End Role="Departman" EntitySet="Departman" />
+      <End Role="tblPersonel" EntitySet="tblPersonel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ilceler_iller" Association="Self.FK_ilceler_iller">
+      <End Role="iller" EntitySet="iller" />
+      <End Role="ilceler" EntitySet="ilceler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personel_ilceler" Association="Self.FK_Personel_ilceler">
+      <End Role="ilceler" EntitySet="ilceler" />
+      <End Role="tblPersonel" EntitySet="tblPersonel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personel_iller" Association="Self.FK_Personel_iller">
+      <End Role="iller" EntitySet="iller" />
+      <End Role="tblPersonel" EntitySet="tblPersonel" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Personelwcf.WCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Personelwcf.WCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPersons">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Persons" nillable="true" type="tns:Persons" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersons" nillable="true" type="tns:ArrayOfPersons" />
+  <xs:complexType name="Persons">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DepartmanAdi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DogTarihi" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Maasi" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PerId" type="xs:int" />
+      <xs:element minOccurs="0" name="PerSoyadi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ilcesi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ili" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="perAdi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resimImage" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="resimyolu" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Persons" nillable="true" type="tns:Persons" />
+</xs:schema>

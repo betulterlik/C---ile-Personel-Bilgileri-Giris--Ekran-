@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7c025ae763714fffa565f4b1f4891388" Name="Diagram1">
+        <EntityTypeShape EntityType="PersonelDBModel.Departman" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonelDBModel.ilceler" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonelDBModel.iller" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonelDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonelDBModel.tblPersonel" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="PersonelDBModel.FK_Personel_Departman" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonelDBModel.FK_ilceler_iller" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonelDBModel.FK_Personel_ilceler" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonelDBModel.FK_Personel_iller" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

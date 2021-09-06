@@ -1,0 +1,16 @@
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.WCF.dll.config
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.WCF.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.WCF.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\obj\Debug\Personelwcf.WCF.csprojResolveAssemblyReference.cache
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\obj\Debug\Personelwcf.WCF.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\obj\Debug\Personelwcf.WCF.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\EntityFramework.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.BLL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.DAL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.BLL.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.BLL.dll.config
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.DAL.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\Personelwcf.DAL.dll.config
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\EntityFramework.xml
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.WCF\bin\Debug\EntityFramework.SqlServer.xml

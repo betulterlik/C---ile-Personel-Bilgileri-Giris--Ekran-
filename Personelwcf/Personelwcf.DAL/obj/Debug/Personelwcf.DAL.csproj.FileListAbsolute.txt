@@ -1,0 +1,10 @@
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\Personelwcf.DAL.dll.config
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\Personelwcf.DAL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\Personelwcf.DAL.pdb
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\obj\Debug\Personelwcf.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\obj\Debug\Personelwcf.DAL.dll
+C:\Users\Sumeyye\Documents\Visual Studio 2017\Projects\Personelwcf\Personelwcf.DAL\obj\Debug\Personelwcf.DAL.pdb
